@@ -23,6 +23,12 @@ class ResearchAndBlogMini():
             config=self.agents_config['reporting_analyst'], # type: ignore[index]
             verbose=True
         )
+    @agent
+    def summarizer_agent(self) -> Agent:
+        return Agent(
+            config=self.agents_config['summarizer_agent'], # type: ignore[index]
+            verbose=True
+        )
 
     @task
     def research_task(self) -> Task:
@@ -34,7 +40,13 @@ class ResearchAndBlogMini():
     def reporting_task(self) -> Task:
         return Task(
             config=self.tasks_config['reporting_task'], # type: ignore[index]
-            output_file='report.md'
+            # output_file='report.md'
+        )
+    @task
+    def summarize_task(self) -> Task:
+        return Task(
+            config=self.tasks_config['summarize_task'], # type: ignore[index]
+            output_file='summary.md'
         )
 
     @crew

@@ -14,7 +14,7 @@ def run():
     Run the crew.
     """
     inputs = {
-        'topic': 'AI LLMs',
+        'topic': 'data scientist vs AI engineer skill gap',
         'current_year': str(datetime.now().year)
     }
 
