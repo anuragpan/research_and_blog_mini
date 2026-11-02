@@ -14,7 +14,7 @@ def run():
     Run the crew.
     """
     inputs = {
-        'topic': 'ML OPS',
+        'topic': 'ML OPs',
         'current_year': str(datetime.now().year)
     }
 
