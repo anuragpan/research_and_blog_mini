@@ -5,7 +5,7 @@ from crewai.agents.agent_builder.base_agent import BaseAgent
 
 @CrewBase
 class ResearchAndBlogMini():
-    """ResearchAndBlogMini crew"""
+    """ResearchAndBlogMini crew Project"""
 
     agents: list[BaseAgent]
     tasks: list[Task]
